@@ -13,11 +13,9 @@
 title: Solution
 ```
 
-1. Create a pod named `hello` with image `bitnami/kubectl` and command `echo "Hello World"`. Make sure the pod does not restart automatically.
-
-    ```bash
-    k run hello --image=bitnami/kubectl --restart=Never --command -- echo "Hello World"
-    ```
+```bash
+k run hello --image=bitnami/kubectl --restart=Never --command -- echo "Hello World"
+```
 
 ```section:end
 ```
