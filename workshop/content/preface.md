@@ -50,6 +50,4 @@ Try to get in the habit of doing this test-first:
 - implement your solution
 - re-run the check and watch it pass
 
-A script is also provided to run all checks in each section.
-
-_Hint_: you can learn how to use _kubectl_ to verify your work by studying this workshop's validation scripts (have a look inside `~/bin`).
+A script is also provided at the end of the workshop to run all checks.

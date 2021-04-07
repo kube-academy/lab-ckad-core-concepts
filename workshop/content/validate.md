@@ -5,16 +5,4 @@ Run the script `check-core-concepts` to verify your solutions.
 command: check-core-concepts
 ```
 
-## Cleanup
-
-Before proceeding to the next section, delete the pods you created in this section:
-
-```terminal:execute
-command: k delete pod --all
-```
-
-..and the one created in the separate namespace:
-
-```terminal:execute
-command: k delete pod --all --namespace {{session_namespace}}-apps
-```
+_Hint_: you can learn how to use _kubectl_ to verify your work by studying this workshop's validation script (have a look inside `~/bin`).
