@@ -7,7 +7,11 @@
     autostart: true
     ```
 
-<h2 style="margin-top: 10em;">Solution</h2>
+<div style="margin-top: 5em;"></div>
+
+```section:begin
+title: Solution
+```
 
 1. Create a Pod named `nginx` in the namespace `{{session_namespace}}-apps`, using the image `bitnami/nginx`.
 
@@ -20,3 +24,6 @@
     ```bash
     k get pod -n {{session_namespace}}-apps -w
     ```
+
+```section:end
+```
