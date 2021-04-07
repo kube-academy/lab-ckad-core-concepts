@@ -4,6 +4,7 @@
     ```examiner:execute-test
     name: core-make-pod
     title: Pod nginx exists
+    autostart: true
     ```
 
 <h2 style="margin-top: 10em;">Solution</h2>

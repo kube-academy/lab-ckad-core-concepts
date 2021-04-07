@@ -4,6 +4,7 @@
     ```examiner:execute-test
     name: core-ns-spec
     title: Manifest for namespace created
+    autostart: true
     ```
 
 <h2 style="margin-top: 10em;">Solution</h2>

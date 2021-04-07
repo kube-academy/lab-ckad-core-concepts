@@ -4,7 +4,7 @@
     ```examiner:execute-test
     name: core-hello-world-pod
     title: Pod emits greeting
-    cascade: true
+    autostart: true
     ```
 
 <h2 style="margin-top: 10em;">Solution</h2>

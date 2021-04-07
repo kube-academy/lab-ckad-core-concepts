@@ -4,7 +4,7 @@
     ```examiner:execute-test
     name: core-redis-pod-manifest
     title: Pod yaml has correct name and image
-    cascade: true
+    autostart: true
     ```
 
 <h2 style="margin-top: 10em;">Solution</h2>
