@@ -7,6 +7,8 @@
     autostart: true
     ```
 
+<div style="margin-top: 5em;"></div>
+
 ```section:begin
 title: Solution
 ```
