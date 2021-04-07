@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl apply -f ~/my-namespace.yaml --dry-run=client -o jsonpath='{.kind}' | grep -q -w Namespace
+kubectl apply -f ~/my-namespace.yaml --dry-run=client -o jsonpath='{.metadata.name}' | grep -q -w frontend

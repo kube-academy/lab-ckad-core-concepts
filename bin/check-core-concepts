@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+import subprocess
+
+class bcolors:
+    OKGREEN = '\033[92m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+
+def check_cmd(command, test):
+    s = subprocess.run(command, shell=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    if s.returncode == 0:
+        print(test + f" {bcolors.OKGREEN}Passed{bcolors.ENDC}")
+    else:
+        print(test + f"{bcolors.FAIL} Failed{bcolors.ENDC}")
+
+print("\nQuestion 1:")
+check_cmd("kubectl apply -f ~/my-namespace.yaml --dry-run=client -o jsonpath='{.kind}' | grep -q -w Namespace", "Resource definition kind is Namespace?")
+check_cmd("kubectl apply -f ~/my-namespace.yaml --dry-run=client -o jsonpath='{.metadata.name}' | grep -q -w frontend", "Resource definition for name is frontend?")
+
+print("\nQuestion 2:")
+check_cmd("kubectl get pod nginx -n \"${SESSION_NAMESPACE}-apps\"", "Session namespace has pod nginx?")
+check_cmd("kubectl get po nginx -n \"${SESSION_NAMESPACE}-apps\" -o jsonpath='{.spec.containers[*].image}' | grep -q -w nginx", "Pod nginx is using image nginx?")
+
+print("\nQuestion 3:")
+check_cmd("kubectl get pod hello | grep -q -w Completed", "Pod hello is completed and not restarting?")
+check_cmd("kubectl logs hello | grep -q -w 'Hello World'", "Pod hello printed 'Hello World'")
+
+print("\nQuestion 4:")
+check_cmd("kubectl apply -f /home/eduk8s/mypodx.yaml --dry-run=server -o jsonpath='{.kind}' | grep -q -w 'Pod'", "Manifest mypodx.yaml has correct syntax?")
+check_cmd("kubectl apply -f /home/eduk8s/mypodx.yaml --dry-run=server -o jsonpath='{.spec.containers[0].image}' | grep -q -w 'redis'", "Manifest mypodx.yaml uses redis image?")
+check_cmd("kubectl apply -f /home/eduk8s/mypodx.yaml --dry-run=server -o jsonpath='{.metadata.name}' | grep -q -w 'mypodx'", "Manifest mypodx.yaml pod has name mypodx?")
