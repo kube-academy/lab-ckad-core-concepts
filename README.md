@@ -2,7 +2,7 @@
 
 This repository is an [Educates](https://docs.edukates.io/) workshop.
 
-It is a port of _the first scenario_ from Liptan Biswas' excellent [CKAD practice challenge](https://www.katacoda.com/liptanbiswas/courses/ckad-practice-challenges).
+It is a port of _the first scenario (core concepts)_ from Liptan Biswas' excellent [CKAD practice challenge](https://www.katacoda.com/liptanbiswas/courses/ckad-practice-challenges).
 
 ## Status
 
