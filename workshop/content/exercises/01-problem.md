@@ -1,5 +1,5 @@
 
-1. Execute a dry-run command to create, in yaml format, the resource definition for a namespace named `frontend`.  Write the yaml output to the file `my-namespace.yaml`.
+1. Execute a dry-run command to create, in yaml format, the resource definition for a namespace named ``frontend``{{copy}}.  Write the yaml output to the file ``my-namespace.yaml``{{copy}}.
 
     ```examiner:execute-test
     name: core-ns-spec
