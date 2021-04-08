@@ -13,7 +13,7 @@ Here is how it works:
 
 1. If the problem is solved correctly and fully, the red banner will turn green, indicating success. At this point, you're ready to go on to the next problem.
 
-It's also nice to have a script to run checks for all the problems at once.
+Separately, it's also nice to have a script to run checks for all the problems at once.
 
 Run the script `check-core-concepts` to verify all your solutions.
 
