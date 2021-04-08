@@ -35,7 +35,7 @@ Your environment has been pre-configured with command completion, and a few shor
     If you are new to [vim](https://www.vim.org/) and have difficulty exiting the editor, try this:
 
     ```terminal:execute
-    command: ":wq"
+    command: "<esc>:q!"
     ```
 
 ### Tips
