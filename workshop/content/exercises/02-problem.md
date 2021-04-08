@@ -1,5 +1,5 @@
 
-1. Create a Pod named `nginx` in the namespace `{{session_namespace}}-apps`, using the image `bitnami/nginx`.
+1. Create a Pod named ``nginx``{{copy}} in the namespace ``{{session_namespace}}-apps``{{copy}}, using the image ``bitnami/nginx``{{copy}}.
 
     ```examiner:execute-test
     name: core-make-pod
