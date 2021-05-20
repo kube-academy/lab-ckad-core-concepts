@@ -32,6 +32,8 @@ Your environment has been pre-configured with command completion, and a few shor
     command: vim mypod.yaml
     ```
 
+    If you need it, see [exiting vim](https://dev.to/jeremy/how-to-exit-vim-11dm).
+
 ### Tips
 
 - In situations where an errant tab makes its way into your yaml file, use `:retab`, which replaces all tab sequences with new strings of white-space using the tabstop value.
